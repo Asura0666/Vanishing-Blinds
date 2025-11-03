@@ -54,7 +54,7 @@ async function FeaturedProducts() {
   }
 
   const featuredProducts = await queryProducts(wixClient, {
-    collectionIds: collection._id,
+    collectionIds: collection._id || "441a3df6-9444-7d27-3616-b95b8d075de3",
   });
 
   if (!featuredProducts.items.length) {
